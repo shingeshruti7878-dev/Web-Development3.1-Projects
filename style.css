@@ -1,75 +1,78 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f5f7fa;
 }
 
-body{
-background:#0f172a;
-color:white;
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-position:fixed;
-width:100%;
-background:#020617;
+.container {
+    display: flex;
 }
 
-nav ul{
-display:flex;
-list-style:none;
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    height: 100vh;
 }
 
-nav ul li{
-margin-left:30px;
+.sidebar ul {
+    list-style: none;
+    padding: 0;
 }
 
-nav ul li a{
-text-decoration:none;
-color:white;
-font-size:18px;
-transition:0.3s;
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
 }
 
-nav ul li a:hover{
-color:#38bdf8;
+.sidebar li:hover {
+    background: #34495e;
 }
 
-.section{
-min-height:100vh;
-padding:120px 60px;
+/* Content */
+.content {
+    width: 75%;
+    padding: 20px;
 }
 
-.title{
-font-size:60px;
+/* Quiz */
+#quizBox {
+    margin-top: 20px;
 }
 
-.subtitle{
-font-size:25px;
-margin-top:10px;
-color:#38bdf8;
+button {
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.project-container{
-display:flex;
-gap:30px;
-margin-top:40px;
+/* Progress Bar */
+.progress {
+    margin-top: 20px;
 }
 
-.card{
-background:#1e293b;
-padding:30px;
-border-radius:10px;
-width:250px;
-transition:0.4s;
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
 }
 
-.card:hover{
-transform:translateY(-10px);
-background:#334155;
+#progressFill {
+    height: 100%;
+    width: 0%;
+    background: #4CAF50;
+    border-radius: 10px;
 }
